@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VISITING CARD</title>
+
+    <link rel="icon" href="title.jpg" type="image/icon type">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
+
+
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+
+
+        *{
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: 'Josefin Sans', sans-serif;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+        }
+
+
+
+        body{
+
+            background-image: linear-gradient(125deg,#020024,#290956,#00d4ff);
+
+            background-size: cover;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+
+        .profile-card{
+
+            width: 380px;
+
+            overflow: hidden;
+
+            text-align: center;
+
+            position: relative;
+
+            box-shadow: 0 0 10px #00000070;
+
+        }
+
+
+
+        .name{
+
+            font-size: 20px;
+
+        }
+
+
+
+        .top{
+
+            padding: 60px 40px;
+
+            background: #00CED1;
+
+        }
+
+
+
+        .message,.call{
+
+            position: absolute;
+
+            top: 40px;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            color: #ffffff50;
+
+        }
+
+
+
+        .message{
+
+            left: 40px;
+
+        }
+
+
+
+        .call{
+
+            right: 40px;
+
+        }
+
+
+
+        .pic{
+
+            width: 150px;
+
+            height: 150px;
+
+            margin: auto;
+
+            margin-bottom: 20px;
+
+            border: 2px solid #2c3e50;
+
+            border-radius: 50%;
+
+            padding: 8px;
+
+            position: relative;
+
+        }
+
+
+
+        .pic::after{
+
+            content: "";
+
+            width: 100%;
+
+            height: 100%;
+
+            position: absolute;
+
+            border: 1px solid #2c3e50;
+
+            left: 0;
+
+            top: 0;
+
+            box-sizing: border-box;
+
+            border-radius: 50%;
+
+            animation: wave 1.5s infinite linear;
+
+        }
+
+
+
+        @keyframes wave{
+
+            to{
+
+                transform: scale(1.5);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+
+        .pic img{
+
+            width: 100%;
+
+            height: 100%;
+
+            border-radius: 50%;
+
+        }
+
+
+
+        .tag{
+
+            font-size: 18px;
+
+            color: #222;
+
+        }
+
+
+
+        .bottom{
+
+            background: #f1f1f11;
+
+            padding: 60px 40px;
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+
+        .border{
+
+            width: 1px;
+
+            height: 20px;
+
+            background: #bbb;
+
+            margin: 0 25px;
+
+        }
+
+
+
+        .social-media{
+
+            position: absolute;
+
+            width: 100%;
+
+            top: -20%;
+
+            left: 0;
+
+            z-index: 1;
+
+        }
+
+
+
+        .social-media i{
+
+            width: 60px;
+
+            height: 60px;
+
+            background: black;
+
+            border-radius: 50%;
+
+            color: #f1f1f1f1;
+
+            font-size: 20px;
+
+            line-height: 60px !important;
+
+            margin: 0 10px;
+
+            position: relative;
+
+        }
+
+
+
+        .social-media i:hover::after{
+
+            content: "";
+
+            width: 100%;
+
+            height: 100%;
+
+            position: absolute;
+
+            background:#2c3e50;
+
+            left: 0;
+
+            top: 0;
+
+            box-sizing: border-box;
+
+            border-radius: 50%;
+
+            animation: wave 1s infinite linear;
+
+            z-index: -1;
+
+            transition: 0.4s linear;
+
+        }
+
+    </style>
+
+    
+
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <div class="top">
+
+            <a href="tel:+918169956401"><i class="call fas fa-phone"></i></a>
+
+            <a href="mailto:ganeshannainar@gmail.com"><i class="message fas fa-envelope"></i></a>
+
+            <div class="pic">
+
+                <img src="pic.jpg" alt="supposed to be pic here">
+
+            </div>
+
+            <div class="name">Ganeshan Nainar</div>
+
+            <div class="tag">Intragalactic-Stranger</div>
+
+        </div>
+
+        <div class="bottom">
+
+            <div class="social-media">
+
+                <a href="https://www.facebook.com/ganeshan.nainar"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://in.linkedin.com/in/ganeshan-nainar-ab8439154"><i class="fab fa-linkedin"></i></a>
+
+                <a href="https://api.whatsapp.com/send?phone=+918169956401"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="https://instagram.com/ganeshannainar?igshid=hg8zd63o4lgr "><i class="fab fa-instagram"></i></a>
+
+            </div>
+
+            <div class="videos">Computer<span>  Enthusiast </span></div>
+
+            <div class="border"></div>
+
+            <div class="subscribers">Astro <span>Physicist</span></div>
+
+            <div class="border"></div>
+
+            <div class="views">Entrepreneur<span></span></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
